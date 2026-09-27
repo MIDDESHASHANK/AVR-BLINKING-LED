@@ -1,23 +1,4 @@
-;.org 0000
-;rjmp reset
-;reset:
-;sbi DDRB,5
-;loop:
-;sbi PORTB,5
-;rcall delay
-;cbi PORTB,5
-;rcall delay
-;rjmp loop
-;delay:
-;ldi r16,255
-;intermediate:
-;ldi r17,255
-;operation:
-;dec r16
-;brne operation
-;dec r17
-;brne intermediate
-;ret
+
     sbi DDRB,5
 
 LOOP:
